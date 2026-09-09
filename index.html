@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Café al Cubo — Cafetería de Especialidad en Providencia</title>
+<meta name="description" content="Café al Cubo, cafetería de especialidad en Seminario 189, Providencia. Café de especialidad, canelés, galletas de pie de limón y planchados, en un espacio accesible y perfecto para trabajar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Pantalla de carga breve: se oculta sola apenas el DOM está listo (script.js) -->
+<div id="loader" class="loader">
+  <div class="loader-cube"></div>
+</div>
+
+<header class="header" id="header">
+  <div class="header-inner">
+    <a href="#inicio" class="brand" data-tab-link="inicio">
+      <span class="brand-cube"></span>
+      <span class="brand-name">Café al Cubo<sup>3</sup></span>
+    </a>
+
+    <nav class="nav-links" id="navLinks">
+      <button class="nav-link active" data-tab-link="inicio">Inicio</button>
+      <button class="nav-link" data-tab-link="nosotros">Nosotros</button>
+      <button class="nav-link" data-tab-link="carta">Carta</button>
+      <button class="nav-link" data-tab-link="resenas">Reseñas</button>
+      <button class="nav-link" data-tab-link="visitanos">Visítanos</button>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<main>
+
+  <!-- ================= INICIO ================= -->
+  <section class="tab-section active" id="inicio" data-tab="inicio">
+
+    <div class="hero">
+      <div class="hero-text reveal">
+        <span class="eyebrow">Cafetería de especialidad · Providencia</span>
+        <h1>El café,<br>llevado <em>al cubo</em>.</h1>
+        <p class="hero-sub">Café de especialidad, pastelería propia y un espacio pensado para quedarse — a trabajar, a conversar o simplemente a disfrutar un buen café.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" data-tab-link="carta">Ver la carta</button>
+          <button class="btn btn-outline" data-tab-link="visitanos">Cómo llegar</button>
+        </div>
+        <div class="hero-rating">
+          <span class="stars">★★★★★</span>
+          <strong>4.9</strong>
+          <span>(71 opiniones en Google)</span>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="hero-cube-bg"></div>
+        <div class="hero-photo">
+          <!-- TEMPORAL: foto de stock, reemplazar por foto real del local cuando el dueño la mande -->
+          <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=900&q=75" alt="Café de especialidad servido con arte latte (foto referencial temporal)">
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-bar reveal">
+      <div class="trust-item">
+        <span class="trust-icon">☕</span>
+        <span>Café de especialidad</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">💻</span>
+        <span>Ideal para trabajar</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">♿</span>
+        <span>Espacio 100% accesible</span>
+      </div>
+      <div class="trust-item">
+        <span class="trust-icon">⭐</span>
+        <span>4.9★ · 71 reseñas</span>
+      </div>
+    </div>
+
+    <section class="section-inner">
+      <div class="highlight-grid">
+        <div class="highlight-card reveal">
+          <span class="card-cube"></span>
+          <h3>Pastelería propia</h3>
+          <p>Canelés y galletas de pie de limón son los productos que más repiten sus propios clientes en Google — hechos en casa, sin apuro.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <span class="card-cube"></span>
+          <h3>Un lugar para quedarse</h3>
+          <p>Google lo destaca como un buen lugar para trabajar con el computador y para sentarse solo a tomar algo con calma — nada de apuro por la mesa.</p>
+        </div>
+        <div class="highlight-card reveal">
+          <span class="card-cube"></span>
+          <h3>Trato cercano</h3>
+          <p>El dueño responde personalmente cada reseña en Google, agradeciendo por nombre — un detalle poco común que sus clientes valoran.</p>
+        </div>
+      </div>
+    </section>
+
+  </section>
+
+  <!-- ================= NOSOTROS ================= -->
+  <section class="tab-section" id="nosotros" data-tab="nosotros">
+    <section class="section-inner narrow">
+      <span class="eyebrow">Nuestra historia</span>
+      <h2 class="reveal">Café, cuidado al cubo</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>Café al Cubo nació en Providencia con una idea simple detrás de su nombre: elevar cada detalle — el café, la atención, la pastelería — al cubo. No se trata solo de servir un buen café, sino de que la experiencia completa valga la pena, desde la primera taza hasta la última miga del canelé.</p>
+          <p>Es un espacio pequeño y cuidado, con entrada y mesas accesibles para sillas de ruedas, donde tanto se puede llegar a trabajar tranquilo con el notebook como a sentarse solo a leer sin que nadie apure la mesa — algo que sus propios clientes destacan en Google como uno de sus puntos fuertes.</p>
+          <p>La pastelería es de casa: canelés, galletas de pie de limón y una carta de té e infusiones que sus clientas describen como "maravillosa". Todo pensado para que la próxima taza de café sea motivo suficiente para volver.</p>
+        </div>
+        <div class="about-photo reveal">
+          <!-- TEMPORAL: foto de stock, reemplazar por foto real del local -->
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=75" alt="Interior cálido de cafetería de especialidad (foto referencial temporal)">
+        </div>
+      </div>
+
+      <div class="quote-block reveal">
+        <p>"Un grato lugar, cálido y acogedor, quienes atienden son muy amorosas y conversadoras... El mejor planchado de mi vida. Con una carta de té e infusiones maravillosa."</p>
+        <span>— Carola Pino, reseña real en Google Maps</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= CARTA ================= -->
+  <section class="tab-section" id="carta" data-tab="carta">
+    <section class="section-inner">
+      <span class="eyebrow">Lo que se sirve</span>
+      <h2 class="reveal">Nuestra Carta</h2>
+      <p class="section-lead reveal">Café al Cubo aún no publica una lista de precios oficial en sus canales — los siguientes son los productos reales que más mencionan sus clientes en Google e Instagram. Precios sujetos a consulta directa en el local.</p>
+
+      <div class="menu-categories">
+
+        <div class="menu-cat reveal">
+          <h3>Café</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Flat white</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Capuchino</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Café de especialidad (grano de la casa)</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <h3>Pastelería propia</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Canelé</span><span class="price">Consultar</span></div>
+            <div class="menu-item"><span>Galletas de pie de limón</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <h3>Salado</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Planchado (sándwich prensado)</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+        <div class="menu-cat reveal">
+          <h3>Té e infusiones</h3>
+          <div class="menu-grid">
+            <div class="menu-item"><span>Selección de tés e infusiones</span><span class="price">Consultar</span></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="menu-note reveal">
+        <strong>Referencia de precio por persona</strong> (dato agregado de Google Maps, no por producto): entre $5.000 y $10.000.
+      </div>
+
+      <p class="menu-tags-title reveal">Lo que más mencionan las reseñas de Google:</p>
+      <div class="menu-tags reveal">
+        <span>#canelé (9)</span>
+        <span>#galletas (5)</span>
+        <span>#carta (5)</span>
+        <span>#flat white (4)</span>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= RESEÑAS ================= -->
+  <section class="tab-section" id="resenas" data-tab="resenas">
+    <section class="section-inner">
+      <span class="eyebrow">Lo que dicen en Google</span>
+      <h2 class="reveal">Reseñas reales</h2>
+      <div class="rating-summary reveal">
+        <span class="rating-big">4.9</span>
+        <div>
+          <span class="stars">★★★★★</span>
+          <p>71 opiniones en Google Maps</p>
+        </div>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">SF</span>
+            <div>
+              <strong>Sara Fernández</strong>
+              <span>6 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Me gusta mucho ir a este café. La comida y el café es muuuy rico. Recomiendo pedir el planchadito. Atienden muy bien y hay mucha buena onda. Si o si prueben las galletitas de pie de limón, no te vas a arrepentir."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">CP</span>
+            <div>
+              <strong>Carola Pino</strong>
+              <span>Local Guide · 7 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★★</span>
+          <p>"Un grato lugar, cálido y acogedor, quienes atienden son muy amorosas y conversadoras. El mejor planchado de mi vida, lo amé. Con una carta de té e infusiones maravillosa."</p>
+        </div>
+
+        <div class="review-card reveal">
+          <div class="review-head">
+            <span class="review-avatar">MV</span>
+            <div>
+              <strong>Mauricio Villalón</strong>
+              <span>Local Guide · 177 opiniones</span>
+            </div>
+          </div>
+          <span class="stars">★★★★☆</span>
+          <p>"La atención muy buena y el local muy bonito... el precio es bueno." <span class="review-note">— el dueño le respondió agradeciendo el comentario y el desafío a seguir mejorando.</span></p>
+        </div>
+      </div>
+
+      <div class="review-cta reveal">
+        <p>¿Ya nos visitaste?</p>
+        <a class="btn btn-primary" href="https://search.google.com/local/writereview?placeid=0x9662c514406024c9:0x5ad307fd9bc543bb" target="_blank" rel="noopener">Escribe tu reseña en Google</a>
+      </div>
+    </section>
+  </section>
+
+  <!-- ================= VISÍTANOS ================= -->
+  <section class="tab-section" id="visitanos" data-tab="visitanos">
+    <section class="section-inner">
+      <span class="eyebrow">Encuéntranos</span>
+      <h2 class="reveal">Visítanos</h2>
+
+      <div class="visit-grid">
+        <div class="visit-info reveal">
+
+          <div class="info-block">
+            <h4>Dirección</h4>
+            <p>Seminario 189, Providencia<br>Espacio con entrada y mesas accesibles para sillas de ruedas</p>
+          </div>
+
+          <div class="info-block">
+            <h4>Horario</h4>
+            <ul class="hours-list" id="hoursList">
+              <li data-day="1"><span>Lunes</span><span>8:00 – 19:30</span></li>
+              <li data-day="2"><span>Martes</span><span>8:00 – 19:30</span></li>
+              <li data-day="3"><span>Miércoles</span><span>8:00 – 19:30</span></li>
+              <li data-day="4"><span>Jueves</span><span>8:00 – 19:30</span></li>
+              <li data-day="5"><span>Viernes</span><span>8:00 – 19:30</span></li>
+              <li data-day="6"><span>Sábado</span><span>9:00 – 14:00</span></li>
+              <li data-day="0"><span>Domingo</span><span>9:00 – 14:00</span></li>
+            </ul>
+            <p class="open-status" id="openStatus"></p>
+          </div>
+
+          <div class="info-block">
+            <h4>Contacto</h4>
+            <!-- Google Maps no registra teléfono ni WhatsApp para este local (verificado en vivo),
+                 y la bio de Instagram tampoco expone ninguno. No se inventa ningún número:
+                 el único canal de contacto confirmado es Instagram. -->
+            <p>No hay teléfono ni WhatsApp registrado por el negocio — el canal de contacto confirmado es Instagram.</p>
+            <a class="btn btn-outline" href="https://www.instagram.com/cafe.alcubo/" target="_blank" rel="noopener">@cafe.alcubo en Instagram</a>
+          </div>
+
+          <div class="route-buttons">
+            <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=Seminario+189,Providencia&destination_place_id=0x9662c514406024c9:0x5ad307fd9bc543bb" target="_blank" rel="noopener">Cómo llegar (Maps)</a>
+            <a class="btn btn-outline" href="https://waze.com/ul?q=Seminario%20189%2C%20Providencia&navigate=yes" target="_blank" rel="noopener">Ir con Waze</a>
+          </div>
+        </div>
+
+        <div class="visit-map reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.220732708545!2d-70.6294994!3d-33.4435553!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c514406024c9%3A0x5ad307fd9bc543bb!2sCaf%C3%A9%20al%20Cubo%20%7C%20Cafeter%C3%ADa%20de%20Especialidad!5e0!3m2!1ses-419!2scl!4v1788917492390!5m2!1ses-419!2scl"
+            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="Ubicación de Café al Cubo en Google Maps"></iframe>
+        </div>
+      </div>
+    </section>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="brand footer-brand">
+      <span class="brand-cube"></span>
+      <span class="brand-name">Café al Cubo<sup>3</sup></span>
+    </div>
+    <p>Seminario 189, Providencia · Cafetería de especialidad</p>
+    <p class="footer-credit">Demo diseñada por <a href="#" target="_blank" rel="noopener">Matías Medina</a></p>
+  </div>
+</footer>
+
+<!-- Widget flotante: solo Instagram, único canal de contacto confirmado (sin WhatsApp/teléfono/delivery reales) -->
+<div class="floating-widget">
+  <a class="fab fab-instagram" href="https://www.instagram.com/cafe.alcubo/" target="_blank" rel="noopener" aria-label="Instagram">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+  </a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
