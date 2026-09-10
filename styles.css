@@ -312,3 +312,13 @@ main{padding-top:var(--header-h);}
   .trust-item{border-right:none;border-bottom:1px solid var(--border);}
   .trust-item:last-child{border-bottom:none;}
 }
+
+/* Quien active "reducir movimiento" en su sistema deberia ver la pagina
+   quieta: no es una preferencia estetica, hay gente a la que el
+   movimiento le produce mareo. */
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important; animation-iteration-count:1 !important;
+    transition-duration:.01ms !important; scroll-behavior:auto !important;
+  }
+}
