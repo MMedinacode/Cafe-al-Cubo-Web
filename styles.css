@@ -199,6 +199,20 @@ main{padding-top:var(--header-h);}
 }
 .quote-block span{display:block;margin-top:.6rem;font-style:normal;font-weight:700;font-size:.85rem;color:var(--muted);}
 
+/* Galería de fotos reales del local. auto-fit en vez de columnas fijas:
+   en el teléfono baja sola a una o dos por fila. */
+.galeria{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:.9rem;margin-top:2.2rem;
+}
+.galeria figure{margin:0;overflow:hidden;border-radius:var(--radius);box-shadow:var(--shadow-sm);}
+.galeria img{
+  display:block;width:100%;aspect-ratio:1/1;object-fit:cover;
+  transition:transform .5s cubic-bezier(.22,1,.36,1);
+}
+.galeria figure:hover img{transform:scale(1.05);}
+@media (prefers-reduced-motion:reduce){ .galeria img{transition:none;} }
+
 /* ===== Carta ===== */
 .menu-note{
   background:var(--cream-2);border:1px solid var(--border);border-radius:var(--radius);
