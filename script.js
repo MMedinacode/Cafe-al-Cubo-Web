@@ -24,6 +24,20 @@ tabLinks.forEach(link => {
   });
 });
 
+// ===== Carta por secciones (pestañas) =====
+const menuTabs = document.querySelectorAll('.menu-tab');
+const menuCats = document.querySelectorAll('.menu-cat');
+menuTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    menuTabs.forEach(t => t.classList.toggle('active', t === tab));
+    menuCats.forEach(c => {
+      const activo = c.dataset.cat === tab.dataset.cat;
+      c.classList.toggle('active', activo);
+      if (activo) c.classList.add('revealed');
+    });
+  });
+});
+
 // ===== Menú hamburguesa mobile =====
 const hamburger = document.getElementById('hamburger');
 const navLinksWrap = document.getElementById('navLinks');

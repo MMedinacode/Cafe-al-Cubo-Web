@@ -2,6 +2,12 @@
 <html lang="es-CL">
 <head>
 <meta charset="UTF-8">
+<!-- ✅ ACTUALIZADO 15-09-2026 (Matías): logo real agregado (fotos/logo.jpg) en
+     header, loader y footer. Carta reorganizada con pestañas por sección
+     (Café / Pastelería propia / Salado / Té e infusiones), igual que en el
+     resto del portafolio — sin productos nuevos, mismos datos reales de
+     antes, solo cambia la forma de mostrarlos. Horario e Instagram
+     revisados, sin cambios: siguen correctos. -->
 <!-- Estas paginas son DEMOS de venta, no el sitio oficial del local.
      Llevan el nombre, el logo, las resenas y el horario reales del
      negocio, asi que si Google las indexara un cliente del local podria
@@ -38,13 +44,13 @@
 
 <!-- Pantalla de carga breve: se oculta sola apenas el DOM está listo (script.js) -->
 <div id="loader" class="loader">
-  <div class="loader-cube"></div>
+  <img class="loader-cube" src="fotos/logo.jpg" alt="Café al Cubo">
 </div>
 
 <header class="header" id="header">
   <div class="header-inner">
     <a href="#inicio" class="brand" data-tab-link="inicio">
-      <span class="brand-cube"></span>
+      <img class="brand-cube" src="fotos/logo.jpg" alt="">
       <span class="brand-name">Café al Cubo<sup>3</sup></span>
     </a>
 
@@ -175,9 +181,16 @@
       <h2 class="reveal">Nuestra Carta</h2>
       <p class="section-lead reveal">Los precios de la pastelería son los que están escritos a mano en la vitrina del local. El resto de los productos son reales — los que más mencionan sus clientes en Google e Instagram — pero su precio hay que consultarlo directo en el local.</p>
 
+      <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta">
+        <button class="menu-tab active" type="button" data-cat="cafe">Café</button>
+        <button class="menu-tab" type="button" data-cat="pasteleria">Pastelería propia</button>
+        <button class="menu-tab" type="button" data-cat="salado">Salado</button>
+        <button class="menu-tab" type="button" data-cat="te">Té e infusiones</button>
+      </div>
+
       <div class="menu-categories">
 
-        <div class="menu-cat reveal">
+        <div class="menu-cat active reveal" data-cat="cafe">
           <h3>Café</h3>
           <div class="menu-grid">
             <div class="menu-item"><span>Flat white</span><span class="price">Consultar</span></div>
@@ -186,7 +199,7 @@
           </div>
         </div>
 
-        <div class="menu-cat reveal">
+        <div class="menu-cat reveal" data-cat="pasteleria">
           <h3>Pastelería propia</h3>
           <!-- Precios REALES, leídos de las pizarritas de su propia vitrina en una
                foto de su ficha de Google Maps (11-09-2026). El cuarto cartel de la
@@ -199,14 +212,14 @@
           </div>
         </div>
 
-        <div class="menu-cat reveal">
+        <div class="menu-cat reveal" data-cat="salado">
           <h3>Salado</h3>
           <div class="menu-grid">
             <div class="menu-item"><span>Planchado (sándwich prensado)</span><span class="price">Consultar</span></div>
           </div>
         </div>
 
-        <div class="menu-cat reveal">
+        <div class="menu-cat reveal" data-cat="te">
           <h3>Té e infusiones</h3>
           <div class="menu-grid">
             <div class="menu-item"><span>Selección de tés e infusiones</span><span class="price">Consultar</span></div>
@@ -346,7 +359,7 @@
 <footer class="footer">
   <div class="footer-inner">
     <div class="brand footer-brand">
-      <span class="brand-cube"></span>
+      <img class="brand-cube" src="fotos/logo.jpg" alt="">
       <span class="brand-name">Café al Cubo<sup>3</sup></span>
     </div>
     <p>Seminario 189, Providencia · Cafetería de especialidad</p>
