@@ -39,6 +39,82 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="pulido.css">
+
+<!-- ══════════════════════════════════════════════════════════════
+     Datos estructurados (schema.org)
+     ══════════════════════════════════════════════════════════════
+     Esto no se ve en la página: lo lee Google. Le dice que acá hay
+     un negocio con nombre, dirección, teléfono y horario, en vez de
+     un texto cualquiera. Es lo que permite salir como ficha y no
+     sólo como un resultado más.
+
+     Todo lo de abajo ya está publicado en esta misma página. Si un
+     dato no estaba, el campo simplemente no aparece. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CafeOrCoffeeShop",
+  "name": "Café al Cubo",
+  "description": "Café al Cubo, cafetería de especialidad en Seminario 189, Providencia. Café de especialidad, canelés, galletas de pie de limón y planchados, en un espacio accesible y perfecto para trabajar.",
+  "image": "https://mmedinacode.github.io/Cafe-al-Cubo-Web/fotos/fachada.jpg",
+  "url": "https://mmedinacode.github.io/Cafe-al-Cubo-Web/",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Seminario 189",
+    "addressLocality": "Providencia",
+    "addressRegion": "Región Metropolitana",
+    "addressCountry": "CL"
+  },
+  "sameAs": [
+    "https://www.instagram.com/cafe.alcubo"
+  ],
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Monday",
+      "opens": "08:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Tuesday",
+      "opens": "08:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Wednesday",
+      "opens": "08:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Thursday",
+      "opens": "08:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Friday",
+      "opens": "08:00",
+      "closes": "19:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "09:00",
+      "closes": "14:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Sunday",
+      "opens": "09:00",
+      "closes": "14:00"
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -133,7 +209,7 @@
         <div class="highlight-card reveal">
           <span class="card-cube"></span>
           <h3>Trato cercano</h3>
-          <p>El dueño responde personalmente cada reseña en Google, agradeciendo por nombre — un detalle poco común que sus clientes valoran.</p>
+          <p>El dueño responde personalmente cada reseña en Google, agradeciendo por nombre — un detalle poco común que nuestros clientes valoran.</p>
         </div>
       </div>
     </section>
@@ -179,7 +255,7 @@
     <section class="section-inner">
       <span class="eyebrow">Lo que se sirve</span>
       <h2 class="reveal">Nuestra Carta</h2>
-      <p class="section-lead reveal">Los precios de la pastelería son los que están escritos a mano en la vitrina del local. El resto de los productos son reales — los que más mencionan sus clientes en Google e Instagram — pero su precio hay que consultarlo directo en el local.</p>
+      <p class="section-lead reveal">Los precios de la pastelería son los que están escritos a mano en la vitrina del local. El resto de la carta va sin precio, los precios se consultan en el local.</p>
 
       <div class="menu-tabs" id="menuTabs" role="tablist" aria-label="Categorías de la carta">
         <button class="menu-tab active" type="button" data-cat="cafe">Café</button>
@@ -245,7 +321,7 @@
       </div>
 
       <div class="menu-note reveal">
-        <strong>Referencia de precio por persona</strong> (dato agregado de Google Maps, no por producto): entre $5.000 y $10.000.
+        <strong>Referencia de precio</strong>: entre $5.000 y $10.000 por persona.
       </div>
 
       <p class="menu-tags-title reveal">Lo que más mencionan las reseñas de Google:</p>
@@ -401,5 +477,6 @@
 <script>window.REDES={"intro": "No publican teléfono: Instagram es la forma de contactarlos y de ver lo que sale de la vitrina.", "instagram": {"user": "cafe.alcubo", "seguidores": "2.917", "fotos": ["fotos/caneles.jpg", "fotos/latte-art.jpg", "fotos/matcha.jpg"]}};</script>
 <script src="redes.js"></script>
 <script src="flotantes.js"></script>
+<script src="pulido.js"></script>
 </body>
 </html>
